@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px ;
+    background-color: $intoBlue;
+    font-weight: 500;
+    flex-wrap: wrap;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 100%;
+    transition: 2s;
+    @include breakpoint(large){
+        padding: 30px 20px;
+    }
+    .logo{
+        cursor: pointer;
+        font-size: 19px;
+        font-weight: 700;
+        color: #67f1c3;
+        @include breakpoint(large){
+            font-size: 23px;
+        }
+    }
+    .logos{
+        font-size: 0.875rem;
+        @include breakpoint(large){
+            font-size: 1rem;
+        }
+    }
+}
+span{
+    display: inline;
+    padding: 0px 20px;
+}
+
+.burger{
+    display: none;
+}
+
+.logos{
+    position: relative;
+    transition: 2s;
+}
+
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
