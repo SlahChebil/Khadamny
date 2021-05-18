@@ -10,7 +10,9 @@ function Header() {
                     <Link to="/" style={{textDecoration: 'none'}}>
                         <span className="logo">Khadamany</span>
                     </Link>
-                    <span className="logos">Find Jobs</span>
+                    <Link to="./jobs">
+                        <span className="logos">Find Jobs</span>
+                    </Link>
                     <span className="logos">Company reviews</span>
                 </div>
                 <div className="right">
