@@ -8,6 +8,7 @@ export class Post extends Component {
             name: '',
             email: '',
             password: '',
+            c_password: '',
             phone: '',
             city:'',
         }
@@ -21,7 +22,7 @@ export class Post extends Component {
         axios.post('url',this.state).then(res => {console.log(res)}).catch(er => {console.log(er)})
     }
     render() {
-        const {name, email , password ,phone ,city} = this.state
+        const {name, email , password , c_password ,phone ,city} = this.state
         return (
             <div>
                 <form onSubmit={this.submitHandler}>
@@ -33,6 +34,9 @@ export class Post extends Component {
                     </div>
                     <div>
                         <input type="password" value={password} onChange={this.changeHandler}/>
+                    </div>
+                    <div>
+                        <input type="password" value={c_password} onChange={this.changeHandler}/>
                     </div>
                     <div>
                         <input type="text" value={phone} onChange={this.changeHandler}/>
