@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-
+import axios from 'axios';
+import Post from './Post'
 const findjobs = () => {
     return axios.get('url')
     .then(res => {
@@ -15,13 +16,14 @@ function Jobs() {
     ]);
     return (
         <div className="Jobs">
-            <input type="submit" onClick={()=>{findjobs();}} />
+            <input type="submit" onClick={()=>{}} />
             {jobs.map((job) =>(
                 <div className="job" key={job.id}>
                     <h2 style={{color : 'black'}}>{job.title}</h2>
                     <h3 style={{color : 'black'}}>{job.price}</h3>
                 </div>
             ))}
+            <Post></Post>
         </div>
     );
 }
