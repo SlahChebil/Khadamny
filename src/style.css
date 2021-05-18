@@ -93,11 +93,10 @@ button {
 .content {
   background-color: #1b2330;
   width: 100%;
-  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 550px;
+  height: 600px;
   background-image: url(./img/homeimage.png);
   background-repeat: no-repeat;
   background-size: 50%;
@@ -321,5 +320,171 @@ footer {
   background-color: #0a1423;
   padding: 8px 100px;
   text-align: center;
+}
+
+.kbira {
+  width: 100%;
+  padding-left: 100px;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5efef;
+}
+
+.kbira .container {
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.kbira .container > * {
+  border: 2px solid #ff1100;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20em;
+          flex: 1 1 20em;
+}
+
+.kbira .leftside > h2 {
+  color: #72777c;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+
+.kbira .cadre1 {
+  background-color: #fff;
+  border: 1px solid #d8dbdc;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  overflow: hidden;
+  padding: 15px;
+  width: 320px;
+  height: 181px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kbira .cadre1 ul li a .profile {
+  font-size: 20px;
+}
+
+.kbira .cadre1 ul li, .kbira .cadre2 ul li {
+  list-style: none;
+  color: #0e75e2;
+  cursor: pointer;
+}
+
+.kbira .cadre1 ul li a, .kbira .cadre2 ul li a {
+  text-decoration: none;
+}
+
+.kbira .cadre2 {
+  padding: 0 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #d8dbdc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  overflow: hidden;
+  width: 320px;
+  height: 97px;
+}
+
+.kbira .cadre2 ul li {
+  padding: 7px;
+}
+
+.container {
+  background-color: #0a1423;
+}
+
+.container .SignIn, .container .login {
+  width: 360px;
+  height: 620px;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.container .SignIn h1, .container .login h1 {
+  padding-top: 15px;
+}
+
+.container .SignIn form, .container .login form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.container .SignIn form label, .container .login form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.container .SignIn form input, .container .login form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.container .SignIn form input[type="button"], .container .login form input[type="button"] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #329ecc;
+  font-size: 18px;
+}
+
+.container .SignIn p, .container .login p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.container p {
+  text-align: center;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.container p a {
+  color: #49c1a2;
+}
+
+.container .para {
+  text-align: center;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.container .para a {
+  color: #49c1a2;
 }
 /*# sourceMappingURL=style.css.map */

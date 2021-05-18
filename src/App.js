@@ -1,20 +1,28 @@
 import './App.css';
+import React from 'react';
 import Header from './Header';
 import Home from './Home';
 import Footer from './Footer';
+import SignIn from './SignIn';
+import Login from './Login';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
       <div className="app">
         <Switch>
-          <Route path='/'>
+          <Route path="/sigin">
+            <Header></Header>
+            <SignIn></SignIn>
+          </Route>
+          <Route path="/login">
+            <Header></Header>
+            <Login></Login>
+          </Route>
+          <Route path="/">
             <Header/>
             <Home/>
             <Footer/>
-          </Route>
-          <Route path='/login'>
-            <Header/>
           </Route>
         </Switch>
       </div>
