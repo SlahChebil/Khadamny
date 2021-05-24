@@ -1,0 +1,116 @@
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.logins{
+    margin: auto;
+    margin-top: 4%;
+    border-radius: 11px;
+    padding: 15px 20px;
+    background-color: $mainBlue;
+    height: 450px;
+    max-width: 550px;
+    min-width: 345px;
+    min-height: 390px;
+}
+
+
+.logins h1{
+    color: #fff;
+    text-align: center;
+    padding-left: 15px;
+}
+.chose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice{
+    list-style: none;
+    padding: 20px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.choice a{
+    text-decoration: none;
+    color: $lightBlue;
+}
+.logins h6{
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logins span{
+    color: $lightBlue;
+}
+
+.form input{
+    margin: 10px 0px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding-left: 14px;
+    color: #fff;
+    background-color: rgb(7, 6, 10);
+}
+
+.form input:focus{
+    border: none;
+    outline: none;
+}
+
+.form input::placeholder{
+    padding-left: 10px;
+}
+
+.submit{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form .ghh{
+    width: 50%;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 500;
+    border: 0.1rem solid #37918b;
+    color: rgb(255, 255, 255);
+    background-color: #37918b;
+    height: 45px;
+}
+
+.form .ghh:hover{
+    background-color: rgb(7, 6, 10);
+}
+.logins p {
+    display: flex;
+    justify-content: center;
+}
+.logins p .forget{
+    text-decoration: none;
+    color: #0E75E2;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.logins .para{
+    font-size: 13px;
+    margin-top: 16px;
+}
+
+.logins .para .seeker{
+    text-decoration: none;
+    color: #0E75E2;
+    margin-left: 5px;
+    font-size: 14px;
+}

@@ -10,15 +10,17 @@ function Header() {
                     <Link to="/" style={{textDecoration: 'none'}}>
                         <span className="logo">Khadamany</span>
                     </Link>
-                    <Link to="./jobs">
+                    <Link to="./findjobs" style={{textDecoration: 'none' ,color: 'white'}}>
                         <span className="logos">Find Jobs</span>
                     </Link>
                     <span className="logos">Company reviews</span>
                 </div>
                 <div className="right">
-                    <span className="logos">Upload your Resume</span>
+                    <Link to="./wave" style={{textDecoration: 'none', color: 'white'}}>
+                        <span className="logos">Upload your Resume</span>
+                    </Link>
                     <button><span className="logos">Post my Job</span></button>
-                    <Link to="./sigin" style={{textDecoration: 'none'}}>
+                    <Link to="./login" style={{textDecoration: 'none', color: 'white'}}>
                         <span className="logos" style={{color: '#fff'}}>Sign In</span>
                     </Link>
                 </div>

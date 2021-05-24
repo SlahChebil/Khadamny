@@ -1,0 +1,51 @@
+.findjobs{
+    background-color:rgb(248, 245, 245);
+    padding: 80px;
+    height: 100vh;
+    .post{
+        border: 1px solid black;
+        height: 360px;
+        width: 360px;
+        color: black;
+        border-radius: 15px;
+        background-color: #fff;
+        background:#FFF;
+        margin:40px auto;
+        
+    }
+    .effect4
+    {
+    position: relative;
+    }
+    .effect4:after
+    {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    right: 10px;
+    left: auto;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    }
+    .img{
+        font-size: 50px;
+        margin-top: 40px;
+    }
+    .contenu{
+        padding-left: 20px;
+    }
+    h4 strong{
+        color:rgba(24, 23, 23, 0.7);
+    }
+}

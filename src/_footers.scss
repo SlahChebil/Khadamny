@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.contents{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  
+}
+.contents .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: $footerBlue;
+}
+.contents p{
+  font-size: 1.3875rem;
+  font-weight: 600;
+  color: $footerBlue;
+}
+footer{
+padding-top: 50px;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: $lightBlue;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $intoBlue;
+}
+.box .contents{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .contents:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  left: -15px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .contents:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 20%;
+  left: -15px;
+  background: #64e1d9;
+  top: -10px;
+}
+.social{
+    margin-top: 20px;
+    display: flex;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px;
+}
+.social li{
+    list-style: none;
+}
+.social li a {
+    width: 48px;
+    height: 48px;
+    background: $intoBlue;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.social li a .fab{
+    color: #fff;
+    font-size: 20px;
+}
+.social li a:hover{
+    background: #254442;
+}
+.left .contents p{
+  text-align: justify;
+}
+.left .contents .social{
+  margin: 20px 0 0 0;
+}
+.left .contents .social a{
+  padding: 0 2px;
+}
+.left .contents .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.center .contents .fas{
+  background: #1a1a1a;
+  height: 48px;
+  width: 48px;
+  font-size: 15px;
+  color:white;
+  border-radius: 10%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.center .contents .place,.phone,.email{
+    display: flex;
+    align-items: center;
+}
+.center .contents .fas:hover{
+  background: #254442;
+}
+.center .contents .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.center .contents .phone{
+  margin: 20px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: $mainBlue;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #312f2f;
+  padding-left: 10px;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: $lightBlue;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: $intoBlue;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.right form .btn button:hover{
+  background: #254442;
+}
+
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}

@@ -6,12 +6,21 @@ import Footer from './Footer';
 import SignIn from './SignIn';
 import Login from './Login';
 import Jobs from './Jobs';
+import FindJobs from './FindJobs';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Wave from './Wave';
 function App() {
   return (
     <Router>
       <div className="app">
         <Switch>
+          <Route path="/findjobs">
+            <Header></Header>
+            <FindJobs></FindJobs>
+          </Route>
+          <Route path="/wave">
+            <Wave></Wave>
+          </Route>
           <Route path="/sigin">
             <Header></Header>
             <SignIn></SignIn>
