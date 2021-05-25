@@ -9,11 +9,27 @@ import Jobs from './Jobs';
 import FindJobs from './FindJobs';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Wave from './Wave';
+import Createsp from './Createsp';
+import Createep from './Createep';
+import Signine from './Signine';
+
 function App() {
   return (
     <Router>
       <div className="app">
         <Switch>
+          <Route path="/signine">
+            <Header></Header>
+            <Signine></Signine>
+          </Route>
+          <Route path="/createep">
+            <Header></Header>
+            <Createep></Createep>
+          </Route>
+          <Route path="/createsp">
+            <Header></Header>
+            <Createsp></Createsp>
+          </Route>
           <Route path="/findjobs">
             <Header></Header>
             <FindJobs></FindJobs>

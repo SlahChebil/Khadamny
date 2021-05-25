@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAA;EACL,aAAa,EAAE,WAAW;EAC1B,YAAY,EAAE,GAAG;EACjB,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "signine.scss"
+    ],
+    "names": [],
+    "file": "signine.css"
+}

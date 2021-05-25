@@ -313,6 +313,12 @@ button {
   color: #92d1cd;
 }
 
+.jobseeker {
+  border-bottom: whitesmoke solid;
+  border-width: 4px;
+  border-radius: 4px;
+}
+
 .logins h6 {
   color: #fff;
   font-size: 14px;
@@ -766,5 +772,20 @@ footer {
   .main-content .box {
     margin: 5px 0;
   }
+}
+
+.signup {
+  height: 470px;
+}
+
+.createep {
+  height: 600px;
+  margin-top: px;
+}
+
+.employer {
+  border-bottom: whitesmoke solid;
+  border-width: 4px;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=style.css.map */
