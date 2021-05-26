@@ -1,51 +1,137 @@
 .findjobs{
-    background-color:rgb(248, 245, 245);
-    padding: 80px;
-    height: 100vh;
-    .post{
-        border: 1px solid black;
-        height: 360px;
-        width: 360px;
-        color: black;
-        border-radius: 15px;
-        background-color: #fff;
-        background:#FFF;
-        margin:40px auto;
-        
-    }
-    .effect4
-    {
-    position: relative;
-    }
-    .effect4:after
-    {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 15px;
-    right: 10px;
-    left: auto;
-    width: 50%;
-    top: 80%;
-    max-width:300px;
-    background: #777;
-    -webkit-box-shadow: 0 15px 10px #777;
-    -moz-box-shadow: 0 15px 10px #777;
-    box-shadow: 0 15px 10px #777;
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    transform: rotate(3deg);
-    }
-    .img{
-        font-size: 50px;
-        margin-top: 40px;
-    }
-    .contenu{
-        padding-left: 20px;
-    }
-    h4 strong{
-        color:rgba(24, 23, 23, 0.7);
+    background-color:$mainBlue;
+    height: 100%;
+    .container{
+        .formrech {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+            .inputsrech{
+            height: 40px;
+            width: 20%;
+            margin: 20px;
+            border: none;
+            border-color: rgb(248, 245, 245);
+            border-radius: 5px;
+            padding-left: 14px;
+            color: #fff;
+            background-color: rgb(7, 6, 10);
+            }
+            #btnrech{
+                background-color: #37918b;
+                border-radius: 20px;
+                height: 40px;
+                color: #fff;
+                font-weight: 700;
+                border: 0.1rem solid #37918b;
+            }
+            #btnrech:active{
+                background-color:rgb(7, 6, 10);
+                transition: 0.2s ease-in;
+            }
+        }
+        .post{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+            justify-content: center;
+            .contenu{
+                display: block;
+                position: relative;
+                overflow: hidden;
+                flex: 0 1 320px;
+                background-color: rgb(7, 6, 10);
+                height: 320px;
+                margin: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
+                border-radius: 13px;
+                &:hover {
+                    transition: all 0.2s ease-out;
+                    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+                    top: -4px;
+                    border: 2px solid #15dbce;
+                }
+                
+                &:before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    top: -16px;
+                    right: -16px;
+                    background: #00838d;
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 32px;
+                    transform: scale(2);
+                    transform-origin: 50% 50%;
+                    transition: transform 0.15s ease-out;
+                  }
+                
+                &:hover:before {
+                    transform: scale(2.15);
+                  }
+                .img{
+                    font-size: 50px;
+                    color: rgb(224, 217, 217);
+                    margin-top: 25px;
+                }
+                h4{
+                    font-size: 15px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-weight: 100;
+                    margin-bottom: 5px;
+                }
+                
+                ul li{
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+                ul li .icon{
+                    margin-right: 5px;
+                    background: #37918b;
+                    border-radius: 50%;
+                    font-size: 15px;
+                }
+                .foter{
+                    position: relative;
+                    .same{
+                        position: absolute;
+                    }
+                    .description{
+                        margin-top: 10px;
+                        height: 67px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 17px;
+                        z-index: 999;
+                    }
+                    .apply{
+                        background-color: #37918b;
+                        color: #ECF3F4;
+                        z-index: 1000;
+                        width: 156px;
+                        height: 40px;
+                        margin-left: 25%;
+                        margin-top: 12%;
+                        border: 0.1rem solid #37918b;
+                    }
+                    .apply:hover{
+                        background-color: #40b1a9;
+                    }
+                }
+            }
+        }   
     }
 }
+

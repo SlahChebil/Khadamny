@@ -16,8 +16,7 @@
         animation: animate 4s ease-in-out infinite;
         animation-delay: calc(var(--i) * 0.25s);
     }
-    #wave1{
-        
+    #wave1{ 
         z-index: 1000;
         opacity: 1;
         background-position-x: 400px;
