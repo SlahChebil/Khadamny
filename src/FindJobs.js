@@ -27,7 +27,7 @@ function FindJobs() {
                         </ul>
                         <div className="foter">
                             <p className="description same">He or She will work closely with the HR Manager and should have strong background experience in the Human Resources field, preferably staffing and recruitment.</p>
-                            <button className="apply same">Apply</button>
+                            <button className="apply same">Click Apply</button>
                         </div>
                     </div>
                     <div className="contenu">
@@ -125,7 +125,7 @@ function FindJobs() {
                         </ul>
                         <div className="foter">
                             <p className="description same">He or She will work closely with the HR Manager and should have strong background experience in the Human Resources field, preferably staffing and recruitment.</p>
-                            <button className="apply same">Apply</button>
+                            <button className="apply same">Click Apply</button>
                         </div>
                     </div>
                 </div>
