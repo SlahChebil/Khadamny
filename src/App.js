@@ -12,12 +12,21 @@ import Wave from './Wave';
 import Createsp from './Createsp';
 import Createep from './Createep';
 import Signine from './Signine';
+import Headerlogged from './Headerlogged';
+import Profile from './Profile';
 
 function App() {
   return (
     <Router>
       <div className="app">
         <Switch>
+          <Route path="/profile">
+            <Headerlogged></Headerlogged>
+            <Profile></Profile>
+          </Route>
+          <Route path="/headerlogged">
+            <Headerlogged></Headerlogged>
+          </Route>
           <Route path="/signine">
             <Header></Header>
             <Signine></Signine>

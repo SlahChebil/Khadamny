@@ -171,97 +171,268 @@ button {
   font-size: 20px;
 }
 
-.kbira {
+.profile {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .container {
+  width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .container .info {
+  margin-bottom: 20px;
   width: 100%;
-  padding-left: 100px;
-  padding-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #f5efef;
-}
-
-.kbira .container {
-  border: 2px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.kbira .container > * {
-  border: 2px solid #ff1100;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 20em;
-          flex: 1 1 20em;
-}
-
-.kbira .leftside > h2 {
-  color: #72777c;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.3;
-  margin-top: 20px;
-  margin-bottom: 8px;
-  padding-left: 20px;
-}
-
-.kbira .cadre1 {
-  background-color: #fff;
-  border: 1px solid #d8dbdc;
-  border-radius: 10px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  overflow: hidden;
-  padding: 15px;
-  width: 320px;
-  height: 181px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.kbira .cadre1 ul li a .profile {
-  font-size: 20px;
-}
-
-.kbira .cadre1 ul li, .kbira .cadre2 ul li {
-  list-style: none;
-  color: #0e75e2;
+.profile .container .info span {
+  color: #6f7377;
+  font-weight: 600;
+  font-size: 30px;
   cursor: pointer;
 }
 
-.kbira .cadre1 ul li a, .kbira .cadre2 ul li a {
+.profile .container .info .icon {
+  font-size: 100px;
+  color: #37918b;
+}
+
+.profile .container .upload {
+  border-radius: 10px;
+  background: #171e2a;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+.profile .container .upload .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px;
+}
+
+.profile .container .upload .head h4 {
+  font-size: 23px;
+  color: #fff;
+}
+
+.profile .container .upload .head .edit {
+  font-size: 25px;
+  color: #fff;
+}
+
+.profile .container .upload .tail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.profile .container .upload .tail .resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+  border: 0.1rem solid #37918b;
+  color: #ECF3F4;
+  background-color: #37918b;
+  height: 45px;
+}
+
+.profile .container .upload .tail .resume:hover {
+  background-color: #07060a;
+}
+
+.profile .container .contact {
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background: #171e2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile .container .contact .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.profile .container .contact .head h4 {
+  font-size: 21px;
+}
+
+.profile .container .contact .head .edit {
+  cursor: pointer;
+}
+
+.profile .container .contact .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+
+.profile .container .contact .email .email {
+  color: #fff;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.profile .container .contact .email h3 {
+  font-size: 15px;
+  color: #94a7a0;
+  font-weight: 100;
+}
+
+.profile .container .contact .phones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile .container .contact .phones .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile .container .contact .phones .phone {
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.profile .container .contact .phones a {
+  font-size: 15px;
+  color: #0e75e2;
   text-decoration: none;
 }
 
-.kbira .cadre2 {
-  padding: 0 15px;
-  border-radius: 8px;
-  background-color: #fff;
-  border: 1px solid #d8dbdc;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  overflow: hidden;
-  width: 320px;
-  height: 97px;
+.profile .popup {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100;
+  height: 100%;
+  position: absolute;
+  position: relative;
+  top: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.kbira .cadre2 ul li {
-  padding: 7px;
+.profile .popup .popup_content {
+  height: 250px;
+  width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.profile .popup .popup_content .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile .popup .popup_content .head h3 {
+  color: black;
+  font-size: 20px;
+}
+
+.profile .popup .popup_content .head .close {
+  font-size: 20px;
+  color: #fff;
+  background-color: black;
+  border-radius: 50px;
+}
+
+.profile .popup .popup_content .head .close:hover {
+  color: #92d1cd;
+}
+
+.profile .popup .popup_content .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container {
@@ -476,6 +647,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .findjobs .container .post .contenu {
@@ -595,6 +767,66 @@ button {
 
 .findjobs .container .post .contenu .foter .apply:hover {
   background-color: #40b1a9;
+}
+
+.findjobs .popup {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1001;
+}
+
+.findjobs .popup .popup_content {
+  height: auto;
+  width: 700px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.findjobs .popup .popup_content .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.findjobs .popup .popup_content .head h3 {
+  color: black;
+  font-size: 20px;
+}
+
+.findjobs .popup .popup_content .head .close {
+  font-size: 20px;
+  color: #fff;
+  background-color: black;
+  border-radius: 50px;
+}
+
+.findjobs .popup .popup_content .head .close:hover {
+  color: #92d1cd;
+}
+
+.findjobs .popup .popup_content .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .wave section {
@@ -913,5 +1145,65 @@ footer {
   border-bottom: white solid;
   border-width: 4px;
   border-radius: 4px;
+}
+
+.contentss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1b2330;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 500;
+  height: 94px;
+}
+
+.contentss .logo {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #67f1c3;
+  padding-left: 85px;
+}
+
+.contentss .choix {
+  padding-right: 150px;
+}
+
+.contentss .choix ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentss .choix ul li {
+  font-size: 1.1rem;
+  list-style: none;
+  margin-left: 50px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.contentss .choix ul li:hover {
+  color: #92d1cd;
+}
+
+.contentss .choix ul .person {
+  font-size: 27px;
+  color: aliceblue;
+  background-color: #67f1c3;
+  border-radius: 50%;
+  margin-top: 4px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -13,7 +13,9 @@ function Header() {
                     <Link to="./findjobs" style={{textDecoration: 'none' ,color: 'white'}}>
                         <span className="logos">Find Jobs</span>
                     </Link>
-                    <span className="logos">Company reviews</span>
+                    <Link to="./headerlogged" style={{textDecoration: 'none' ,color: 'white'}}>
+                        <span className="logos">Company reviews</span>
+                    </Link>
                 </div>
                 <div className="right">
                     <Link to="./wave" style={{textDecoration: 'none', color: 'white'}}>

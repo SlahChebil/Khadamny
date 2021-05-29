@@ -1,0 +1,44 @@
+.contentss{
+    display: flex;
+    background-color: $intoBlue;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    font-weight: 500;
+    height: 94px;
+    .logo{
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #67f1c3;
+        padding-left: 85px;
+    }
+    .choix{
+        padding-right: 150px;
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                font-size: 1.1rem;
+                list-style: none;
+                margin-left: 50px;
+                cursor: pointer;
+                height: 100%;
+            }
+            li:hover{
+                color: $lightBlue;                
+            }
+            .person{
+                font-size: 27px;
+                color: aliceblue;
+                background-color: #67f1c3;
+                border-radius: 50%;
+                margin-top: 4px;
+            }
+        }
+        
+    }
+    
+}
