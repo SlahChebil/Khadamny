@@ -32,7 +32,7 @@ render(){
                 <div className="logins createep">
                     <h1>SIGN<span>UP</span></h1>
                     <h6>Welcome to khadamny</h6>
-                    <form className="form">
+                    <form className="form" onSubmit={this.submitHandler}>
                         <div className="choses">
                             <ul className="chose">
                                 <li className="choice employer" id="employer"><Link to="createep"><a href="#" id="link1">I'm an Employer</a></Link></li>
