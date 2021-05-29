@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-export class Post extends Component {
+export class Createep extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -22,9 +22,9 @@ export class Post extends Component {
         console.log(this.state)
         axios.post('url',this.state).then(res => {console.log(res)}).catch(er => {console.log(er)})
     }
-}
 
-function Createep() {
+
+render(){
     const {name, email , password , c_password ,phone ,city} = this.state;
     return (
         <div className="createep">
@@ -40,11 +40,11 @@ function Createep() {
                             </ul>
                         </div>
                         <input type="text" name="name" placeholder="Name" value={name} onChange={this.changeHandler}/>
-                        <input type="email" placeholder="Email Adress" id="email" value={email} onChange={this.changeHandler}required/><br/>
-                        <input type="password" placeholder="Password" id="password" value={password} onChange={this.changeHandler} required/><br/>
+                        <input type="email" placeholder="Email Adress" id="email" name="email" value={email} onChange={this.changeHandler}required/><br/>
+                        <input type="password" placeholder="Password" id="password" name="password" value={password} onChange={this.changeHandler} required/><br/>
                         <input type="password" name="c_password" id="c_password" placeholder="Confirm password" value={c_password} onChange={this.changeHandler}required/>
-                        <input type="tel" name="phone"placeholder="Phone number" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" value={phone} onChange={this.changeHandler}/>
-                        <input type="text" placeholder="city" id="city" value={city} onChange={this.changeHandler} required /><br/>
+                        <input type="tel" name="phone" placeholder="Phone number" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" value={phone} onChange={this.changeHandler}/>
+                        <input type="text" placeholder="city" id="city" name="city" value={city} onChange={this.changeHandler} required /><br/>
                         <div className="submit">
                             <button type="submit" className="ghh">SIGN UP</button>
                         </div>
@@ -55,5 +55,6 @@ function Createep() {
         </div>
     )
 }
+}
 
-export default Createep
+export default Createep;
