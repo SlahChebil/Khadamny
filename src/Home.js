@@ -1,5 +1,6 @@
 import React, { Component , useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import './style.css';
 
 export class Home extends Component{
@@ -19,20 +20,22 @@ export class Home extends Component{
         axios.post('url',this.state).then(res => {console.log(res)}).catch(er => {console.log(er)})
     }
     render(){
-        const {city, categorie = this.state};
-        <div className="content">
-            <div className="leftside">
-                <h1>Find the <strong>Right</strong> Job</h1><br/>
-                <form className="form" onSubmit={this.submitHandler}>
-                    <input type="text" className="inputs" placeholder="Job title, Keywords" id="job" name="categorie" value={categorie} onChange={this.changeHandler}/>
-                    <input type="text" className="inputs" placeholder="City, state, zip code" id="area" name="city" value={city} onChange={this.changeHandler}/>
-                    <Link to="./findjobs">
-                        <button id="btn" type="submit">Find Job</button>
-                    </Link>
-                </form>
-                <p><q>All our dreams can come true <br/>if we have the courage to pursue<br/>them.</q><small>—Walt Disney</small></p>
+        const {city, categorie} = this.state;
+        return(
+            <div className="content">
+                <div className="leftside">
+                    <h1>Find the <strong>Right</strong> Job</h1><br/>
+                    <form className="form" onSubmit={this.submitHandler}>
+                        <input type="text" className="inputs" placeholder="Job title, Keywords" id="job" name="categorie" value={categorie} onChange={this.changeHandler}/>
+                        <input type="text" className="inputs" placeholder="City, state, zip code" id="area" name="city" value={city} onChange={this.changeHandler}/>
+                        <Link to="./findjobs">
+                            <button id="btn" type="submit">Find Job</button>
+                        </Link>
+                    </form>
+                    <p><q>All our dreams can come true <br/>if we have the courage to pursue<br/>them.</q><small>—Walt Disney</small></p>
+                </div>
             </div>
-        </div>
+        )
     }
 }
 

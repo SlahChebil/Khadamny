@@ -1,4 +1,5 @@
-import React, { useState }from 'react';
+import React, { Component , useState }from 'react';
+
 import './style.css';
 import BusinessIcon from '@material-ui/icons/Business';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
