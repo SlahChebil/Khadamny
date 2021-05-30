@@ -9,15 +9,35 @@ export class Home extends Component{
         this.state = {
             categorie:'',
             city:'',
+            posts:[]
         }
     }
     changeHandler =(e) => {
-        this.setState({[e.target.name]: e.target.value})
+        this.setState({
+            [e.target.name]: e.target.value
+        })
     }
-    submitHandler = (e) => {
+    submitHandler =(e) => {
         e.preventDefault()
-        console.log(this.state)
-        axios.post('url',this.state).then(res => {console.log(res)}).catch(er => {console.log(er)})
+
+        const city = this.state.city
+        const categorie = this.state.categorie
+
+        const data = {
+            categorie,
+            city
+        }
+        return axios.post('url',data)
+        .then(res => {
+            console.log(res);
+            const posts = res.data.data;
+            this.setState({
+                posts
+            })
+        })
+        .catch(er => {
+            console.log(er);
+        })
     }
     render(){
         const {city, categorie} = this.state;

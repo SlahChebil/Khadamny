@@ -2,6 +2,7 @@ import React from 'react';
 import PersonIcon from '@material-ui/icons/Person';
 import { Link } from "react-router-dom";
 import Home from './Home';
+import Footer from './Footer';
 
 function Headerlogged() {
     return (
@@ -16,6 +17,7 @@ function Headerlogged() {
                         <Link to="./profile">
                             <li><a>Profile</a></li>
                         </Link>
+                        <li><a href="#">Post jobs</a></li>
                         <li><a>Sign Out</a></li>
                         <li><a href="#"><PersonIcon className="person"></PersonIcon></a></li>
                     </ul>

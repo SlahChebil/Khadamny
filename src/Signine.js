@@ -1,6 +1,7 @@
 import React,{ Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route ,Redirect} from 'react-router-dom';
 import axios from 'axios';
+import { useHistory } from "react-router-dom";
 
 export class Signine extends Component {
     constructor(props) {
@@ -8,6 +9,10 @@ export class Signine extends Component {
         this.state = {
             email: '',
             password: '',
+            succes: false,
+            loading:false,
+            token:'',
+            error : {}
         }
     }
     changeHandler =(e) => {
@@ -15,13 +20,32 @@ export class Signine extends Component {
     }
     submitHandler = (e) => {
         e.preventDefault()
-        console.log(this.state)
-        axios.post('url',this.state).then(res => {console.log(res)}).catch(er => {console.log(er)})
+        const email = this.state.email
+        const password = this.state.password
+
+        const data = {
+            email,
+            password
+        }
+        this.setState({succes:true})
+        return axios.post('url',data)
+        .then(res => {
+            this.setState({succes:true,error:{},loading:false})
+            localStorage.setItem('token',this.state.token)
+            console.log(res)
+        })
+        .catch(er => {
+            this.setState({error:er,succes:false,loading:false})
+            console.log(er)
+        })
     }
 render() {
     const {email , password} = this.state;
+    
     return (
-        <div className="signine">
+    <>
+      {this.state.succes ? <Redirect to="/headerlogged" /> : this.state.error ? <p>bad credentials</p>: null}
+      <div className="signine">
             <div className="container">
                 <div className="logins">
                     <h1>SIGN<span>IN</span></h1>
@@ -44,6 +68,7 @@ render() {
                 </div>
             </div>
         </div>
+     </>
     )
 }
 }

@@ -12,6 +12,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import PublishIcon from '@material-ui/icons/Publish';
 import EditIcon from '@material-ui/icons/Edit';
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
+import Home from './Home';
 
 function Profile() {
     let a = document.getElementById(".phonen");

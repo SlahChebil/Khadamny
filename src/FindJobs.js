@@ -34,7 +34,7 @@ export class FindJobs extends Component{
         return axios.post('url',data)
         .then(res => {
             console.log(res);
-            const posts = res.data;
+            const posts = res.data.data;
             this.setState({
                 posts
             })

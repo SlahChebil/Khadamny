@@ -16,6 +16,7 @@ import Headerlogged from './Headerlogged';
 import Profile from './Profile';
 
 function App() {
+
   return (
     <Router>
       <div className="app">
@@ -26,12 +27,14 @@ function App() {
           </Route>
           <Route path="/headerlogged">
             <Headerlogged></Headerlogged>
+            <Home></Home>
+            <Footer></Footer>
           </Route>
           <Route path="/signine">
             <Header></Header>
             <Signine></Signine>
           </Route>
-          <Route path="/createep">
+          <Route path="/createep"/*component={Createep}*/>
             <Header></Header>
             <Createep></Createep>
           </Route>
@@ -40,6 +43,7 @@ function App() {
             <Createsp></Createsp>
           </Route>
           <Route path="/findjobs">
+              
             <Header></Header>
             <FindJobs></FindJobs>
           </Route>
