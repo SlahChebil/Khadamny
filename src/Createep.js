@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import './style.css';
 
 export class Createep extends Component {
     constructor(props) {
@@ -27,9 +28,9 @@ export class Createep extends Component {
 render(){
     const {name, email , password , c_password ,phone ,city} = this.state;
     return (
-        <div className="createep">
+        <div className="createep" >
             <div className="container">
-                <div className="logins createep">
+                <div className="logins createep" style={{height:"680px"}}>
                     <h1>SIGN<span>UP</span></h1>
                     <h6>Welcome to khadamny</h6>
                     <form className="form" onSubmit={this.submitHandler}>

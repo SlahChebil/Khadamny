@@ -1,21 +1,39 @@
 import React, { Component , useState } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
-
-function Home() {
-    return (
+export class Home extends Component{
+    constructor(props) {
+        super(props)
+        this.state = {
+            categorie:'',
+            city:'',
+        }
+    }
+    changeHandler =(e) => {
+        this.setState({[e.target.name]: e.target.value})
+    }
+    submitHandler = (e) => {
+        e.preventDefault()
+        console.log(this.state)
+        axios.post('url',this.state).then(res => {console.log(res)}).catch(er => {console.log(er)})
+    }
+    render(){
+        const {city, categorie = this.state};
         <div className="content">
             <div className="leftside">
                 <h1>Find the <strong>Right</strong> Job</h1><br/>
-                <form className="form">
-                    <input type="text" className="inputs" placeholder="Job title, Keywords" id="job"/>
-                    <input type="text" className="inputs" placeholder="City, state, zip code" id="area"/>
-                    <button id="btn">Find Job</button>
+                <form className="form" onSubmit={this.submitHandler}>
+                    <input type="text" className="inputs" placeholder="Job title, Keywords" id="job" name="categorie" value={categorie} onChange={this.changeHandler}/>
+                    <input type="text" className="inputs" placeholder="City, state, zip code" id="area" name="city" value={city} onChange={this.changeHandler}/>
+                    <Link to="./findjobs">
+                        <button id="btn" type="submit">Find Job</button>
+                    </Link>
                 </form>
                 <p><q>All our dreams can come true <br/>if we have the courage to pursue<br/>them.</q><small>—Walt Disney</small></p>
             </div>
         </div>
-    )
+    }
 }
 
 export default Home;
