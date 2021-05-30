@@ -1,4 +1,5 @@
 import React, { Component , useState , useEffect }from 'react';
+import axios from 'axios';
 
 import './style.css';
 import BusinessIcon from '@material-ui/icons/Business';
@@ -12,18 +13,31 @@ export class FindJobs extends Component{
         this.state = {
             categorie:'',
             city:'',
+            posts:[]
         }
     }
     changeHandler =(e) => {
-        this.setState({[e.target.name]: e.target.value})
+        this.setState({
+            [e.target.name]: e.target.value
+        })
     }
     submitHandler =(e) => {
         e.preventDefault()
-        console.log(this.state)
-        return axios.get('url')
+
+        const city = this.state.city
+        const categorie = this.state.categorie
+
+        const data = {
+            categorie,
+            city
+        }
+        return axios.post('url',data)
         .then(res => {
             console.log(res);
-            return res;
+            const posts = res.data;
+            this.setState({
+                posts
+            })
         })
         .catch(er => {
             console.log(er);
@@ -40,7 +54,6 @@ export class FindJobs extends Component{
             a.style.display= "none";
         }
         const {city, categorie} = this.state;
-        const [posts, setpost] = useState(JSON.stringify(res))
         return(
         <div className="findjobs">
             <div className="container">
@@ -52,7 +65,7 @@ export class FindJobs extends Component{
                     </form>
                 </div>
                 <div className="post" onClick={()=>popup()}>   
-                        {posts.map((post)=>(
+                        {this.state.posts.map((post)=>(
                             <div className="contenu">
                                 <BusinessIcon className="img"></BusinessIcon>
                                 <h4>{post.title}</h4>
@@ -67,7 +80,7 @@ export class FindJobs extends Component{
                                     <button className="apply same" onClick={()=>popup()}>Click Apply</button>
                                 </div>
                             </div>
-                        ))}        
+                        ))}       
                 </div>
                 <div className="popup" id="popup">
                         <div className="popup_content">
