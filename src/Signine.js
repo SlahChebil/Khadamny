@@ -27,11 +27,12 @@ export class Signine extends Component {
             email,
             password
         }
-        this.setState({succes:true})
-        return axios.post('url',data)
+        this.setState({loading:true})
+        return axios.post('http://localhost:8000/api/login',data)
         .then(res => {
             this.setState({succes:true,error:{},loading:false})
-            localStorage.setItem('token',this.state.token)
+            localStorage.setItem('token',res.data.data.token)
+            console.log(res.data.data.token)
             console.log(res)
         })
         .catch(er => {

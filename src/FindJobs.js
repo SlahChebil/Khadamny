@@ -31,7 +31,7 @@ export class FindJobs extends Component{
             categorie,
             city
         }
-        return axios.post('url',data)
+        return axios.post('http://localhost:8000/api/posts/search',data)
         .then(res => {
             console.log(res);
             const posts = res.data.data;
@@ -69,14 +69,14 @@ export class FindJobs extends Component{
                             <div className="contenu">
                                 <BusinessIcon className="img"></BusinessIcon>
                                 <h4>{post.title}</h4>
-                                <p>VERMEG</p>
-                                <p>New York, NY</p>
+                                <p>{post.name}</p>
+                                <p>{post.city}</p>
                                 <ul>
-                                    <li><MonetizationOnIcon className="icon"></MonetizationOnIcon>600 TND</li>
-                                    <li><WorkIcon className="icon"></WorkIcon>IT Manager</li>
+                                    <li><MonetizationOnIcon className="icon"></MonetizationOnIcon>{post.price} TND</li>
+                                    <li><WorkIcon className="icon"></WorkIcon>{post.categorie}</li>
                                 </ul>
                                 <div className="foter">
-                                    <p className="description same">He or She will work closely with the HR Manager and should have strong background experience in the Human Resources field, preferably staffing and recruitment.</p>
+                                    <p className="description same">{post.detail}</p>
                                     <button className="apply same" onClick={()=>popup()}>Click Apply</button>
                                 </div>
                             </div>
