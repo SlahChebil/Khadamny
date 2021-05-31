@@ -44,7 +44,7 @@ render(){
                         <input type="email" placeholder="Email Adress" id="email" name="email" value={email} onChange={this.changeHandler}required/><br/>
                         <input type="password" placeholder="Password" id="password" name="password" value={password} onChange={this.changeHandler} required/><br/>
                         <input type="password" name="c_password" id="c_password" placeholder="Confirm password" value={c_password} onChange={this.changeHandler}required/>
-                        <input type="tel" name="phone" placeholder="Phone number" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" value={phone} onChange={this.changeHandler}/>
+                        <input type="tel" name="phone" placeholder="Phone number" value={phone} onChange={this.changeHandler}/>
                         <input type="text" placeholder="city" id="city" name="city" value={city} onChange={this.changeHandler} required /><br/>
                         <div className="submit">
                             <button type="submit" className="ghh">SIGN UP</button>

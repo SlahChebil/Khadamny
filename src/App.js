@@ -14,62 +14,62 @@ import Createep from './Createep';
 import Signine from './Signine';
 import Headerlogged from './Headerlogged';
 import Profile from './Profile';
+import { Component } from 'react';
 
-function App() {
-
-  return (
-    <Router>
-      <div className="app">
-        <Switch>
-          <Route path="/profile">
-            <Headerlogged></Headerlogged>
-            <Profile></Profile>
-          </Route>
-          <Route path="/headerlogged">
-            <Headerlogged></Headerlogged>
-            <Home></Home>
-            <Footer></Footer>
-          </Route>
-          <Route path="/signine">
-            <Header></Header>
-            <Signine></Signine>
-          </Route>
-          <Route path="/createep"/*component={Createep}*/>
-            <Header></Header>
-            <Createep></Createep>
-          </Route>
-          <Route path="/createsp">
-            <Header></Header>
-            <Createsp></Createsp>
-          </Route>
-          <Route path="/findjobs">
-              
-            <Header></Header>
-            <FindJobs></FindJobs>
-          </Route>
-          <Route path="/wave">
-            <Wave></Wave>
-          </Route>
-          <Route path="/sigin">
-            <Header></Header>
-            <SignIn></SignIn>
-          </Route>
-          <Route path="/login">
-            <Header></Header>
-            <Login></Login>
-          </Route>
-          <Route path="/jobs">
-            <Header></Header>
-            <Jobs></Jobs>
-          </Route>
-          <Route path="/">
-            <Header/>
-            <Home/>
-            <Footer/>
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+function App(){
+    return (
+      <Router>
+        <div className="app">
+          <Switch>
+            <Route path="/profile">
+              <Headerlogged></Headerlogged>
+              <Profile></Profile>
+            </Route>
+            <Route path="/headerlogged">
+              <Headerlogged></Headerlogged>
+              <Home></Home>
+              <Footer></Footer>
+            </Route>
+            <Route path="/signine">
+              <Header></Header>
+              <Signine></Signine>
+            </Route>
+            <Route path="/createep"/*component={Createep}*/>
+              <Header></Header>
+              <Createep></Createep>
+            </Route>
+            <Route path="/createsp">
+              <Header></Header>
+              <Createsp></Createsp>
+            </Route>
+            <Route path="/findjobs">
+                
+              <Header></Header>
+              <FindJobs></FindJobs>
+            </Route>
+            <Route path="/wave">
+              <Wave></Wave>
+            </Route>
+            <Route path="/sigin">
+              <Header></Header>
+              <SignIn></SignIn>
+            </Route>
+            <Route path="/login">
+              <Header></Header>
+              <Login></Login>
+            </Route>
+            <Route path="/jobs">
+              <Header></Header>
+              <Jobs></Jobs>
+            </Route>
+            <Route path="/">
+              <Header/>
+              <Home/>
+              <Footer/>
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    )
 }
 export default App;

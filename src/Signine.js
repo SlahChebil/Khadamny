@@ -27,7 +27,7 @@ export class Signine extends Component {
             email,
             password
         }
-        this.setState({succes:true})
+        this.setState({loading:true})
         return axios.post('url',data)
         .then(res => {
             this.setState({succes:true,error:{},loading:false})
