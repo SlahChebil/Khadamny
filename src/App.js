@@ -15,12 +15,18 @@ import Signine from './Signine';
 import Headerlogged from './Headerlogged';
 import Profile from './Profile';
 import { Component } from 'react';
+import First from './First';
+import PostJob from './PostJob';
 
 function App(){
     return (
       <Router>
         <div className="app">
           <Switch>
+            <Route path="/postJob">
+              <Headerlogged></Headerlogged>
+              <PostJob></PostJob>
+            </Route>
             <Route path="/profile">
               <Headerlogged></Headerlogged>
               <Profile></Profile>
@@ -62,9 +68,7 @@ function App(){
               <Jobs></Jobs>
             </Route>
             <Route path="/">
-              <Header/>
-              <Home/>
-              <Footer/>
+              <First></First>
             </Route>
           </Switch>
         </div>

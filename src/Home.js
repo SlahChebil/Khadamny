@@ -2,6 +2,7 @@ import React, { Component , useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './style.css';
+import FindJobs from './FindJobs';
 
 export class Home extends Component{
     constructor(props) {

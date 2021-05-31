@@ -501,7 +501,7 @@ button {
   color: #92d1cd;
 }
 
-.form input {
+.form input, textarea {
   margin: 10px 0px;
   height: 50px;
   width: 100%;
@@ -512,25 +512,34 @@ button {
   background-color: #07060a;
 }
 
-.form input:focus {
+.form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.form input, textarea:focus {
   border: none;
   outline: none;
 }
 
 .form input::-webkit-input-placeholder {
   padding-left: 10px;
+  padding-right: 20px;
 }
 
 .form input:-ms-input-placeholder {
   padding-left: 10px;
+  padding-right: 20px;
 }
 
 .form input::-ms-input-placeholder {
   padding-left: 10px;
+  padding-right: 20px;
 }
 
 .form input::placeholder {
   padding-left: 10px;
+  padding-right: 20px;
 }
 
 .submit {
@@ -1144,6 +1153,111 @@ footer {
   border-bottom: white solid;
   border-width: 4px;
   border-radius: 4px;
+}
+
+.postJob {
+  position: relative;
+  width: 100%;
+}
+
+.postJob .container {
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 11px;
+  padding: 15px 20px;
+  background-color: #171e2a;
+  height: auto;
+  max-width: 550px;
+  min-width: 345px;
+  min-height: 390px;
+}
+
+.postJob .container h1 {
+  color: #fff;
+  text-align: center;
+  padding-left: 15px;
+}
+
+.postJob .container h1 span {
+  color: #92d1cd;
+}
+
+.postJob .container h6 {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.postJob .container .form .form input {
+  margin: 10px 0px;
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  padding-left: 14px;
+  color: #fff;
+  background-color: #07060a;
+}
+
+.postJob .container .form .form input, .postJob .container .form textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.postJob .container .form .form input::-webkit-input-placeholder {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.postJob .container .form .form input:-ms-input-placeholder {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.postJob .container .form .form input::-ms-input-placeholder {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.postJob .container .form .form input::placeholder {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.postJob .container .form .form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.postJob .container .form .submit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postJob .container .form .submit .ghh {
+  width: 50%;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+  border: 0.1rem solid #37918b;
+  color: #ECF3F4;
+  background-color: #37918b;
+  height: 45px;
+}
+
+.postJob .container .form .submit .ghh:hover {
+  background-color: #07060a;
 }
 
 .contentss {

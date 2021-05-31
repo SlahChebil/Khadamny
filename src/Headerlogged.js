@@ -16,7 +16,9 @@ export class Headerlogged extends Component{
                         <Link to="./profile">
                             <li><a>Profile</a></li>
                         </Link>
-                        <li><a href="#">Post jobs</a></li>
+                        <Link to ="./postJob">
+                            <li><a href="#">Post jobs</a></li>
+                        </Link>
                         <li><a>Sign Out</a></li>
                         <li><a href="#"><PersonIcon className="person"></PersonIcon></a></li>
                     </ul>
