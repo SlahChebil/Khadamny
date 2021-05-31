@@ -27,7 +27,7 @@ export class Signine extends Component {
             password
         }
         this.setState({loading:true})
-        return axios.post('http://localhost:8000/api/posts/search',data)
+        return axios.post('http://localhost:8000/api/login',data)
         .then(res => {
             this.setState({succes:true,error:{},loading:false})
             localStorage.setItem('token',res.data.data.token)

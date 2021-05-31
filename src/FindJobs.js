@@ -32,7 +32,7 @@ export class FindJobs extends Component{
             categorie,
             city
         }
-        return axios.post('url',data)
+        return axios.post('http://localhost:8000/api/posts/search',data)
         .then(res => {
             console.log(res);
             const posts = res.data.data;
