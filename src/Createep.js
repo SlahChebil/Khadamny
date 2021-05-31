@@ -21,7 +21,7 @@ export class Createep extends Component {
     submitHandler = (e) => {
         e.preventDefault()
         console.log(this.state)
-        axios.post('url',this.state).then(res => {console.log(res)}).catch(er => {console.log(er)})
+        axios.post('http://localhost:8000/api/register',this.state).then(res => {console.log(res)}).catch(er => {console.log(er)})
     }
 
 
