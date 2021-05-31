@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
+import React , {Component}from 'react';
 import PersonIcon from '@material-ui/icons/Person';
 import { Link } from "react-router-dom";
-import Home from './Home';
-import Footer from './Footer';
 
-export class Headerlogged extends Component() {
-    
+export class Headerlogged extends Component{
     render(){
     return (
         <div className="headerlogged">

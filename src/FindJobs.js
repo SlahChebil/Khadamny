@@ -10,10 +10,11 @@ import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 export class FindJobs extends Component{
     constructor(props) {
         super(props)
+        this.submitHandler = this.submitHandler.bind(this);
         this.state = {
             categorie:'',
             city:'',
-            posts:[]
+            posts:[],
         }
     }
     changeHandler =(e) => {
@@ -31,7 +32,7 @@ export class FindJobs extends Component{
             categorie,
             city
         }
-        return axios.post('http://localhost:8000/api/posts/search',data)
+        return axios.post('url',data)
         .then(res => {
             console.log(res);
             const posts = res.data.data;
@@ -69,17 +70,10 @@ export class FindJobs extends Component{
                             <div className="contenu">
                                 <BusinessIcon className="img"></BusinessIcon>
                                 <h4>{post.title}</h4>
-<<<<<<< HEAD
-                                <p>V{post.name}</p>
-                                <p>{post.city}</p>
-                                <ul>
-                                    <li><MonetizationOnIcon className="icon"></MonetizationOnIcon>{post.price}</li>
-=======
                                 <p>{post.name}</p>
                                 <p>{post.city}</p>
                                 <ul>
-                                    <li><MonetizationOnIcon className="icon"></MonetizationOnIcon>{post.price} TND</li>
->>>>>>> 63d6a682ac2e4d97f93080a1b5eb0dce4ee0fb82
+                                    <li><MonetizationOnIcon className="icon"></MonetizationOnIcon>{post.price}</li>
                                     <li><WorkIcon className="icon"></WorkIcon>{post.categorie}</li>
                                 </ul>
                                 <div className="foter">

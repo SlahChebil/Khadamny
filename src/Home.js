@@ -27,7 +27,7 @@ export class Home extends Component{
             categorie,
             city
         }
-        return axios.post('http://localhost:8000/api/posts/search',data)
+        return axios.post('url',data)
         .then(res => {
             console.log(res);
             const posts = res.data.data;

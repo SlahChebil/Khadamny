@@ -34,7 +34,7 @@ function App(){
               <Header></Header>
               <Signine></Signine>
             </Route>
-            <Route path="/createep"/*component={Createep}*/>
+            <Route path="/createep">
               <Header></Header>
               <Createep></Createep>
             </Route>
@@ -43,7 +43,6 @@ function App(){
               <Createsp></Createsp>
             </Route>
             <Route path="/findjobs">
-                
               <Header></Header>
               <FindJobs></FindJobs>
             </Route>
