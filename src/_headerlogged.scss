@@ -20,6 +20,13 @@
         ul{
             display: flex;
             align-items: center;
+            .button {
+                background: #a6ccbf;
+                background-size: 100px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+            }
             li{
                 font-size: 1.1rem;
                 list-style: none;

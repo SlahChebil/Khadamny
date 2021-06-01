@@ -23,7 +23,7 @@ function Createsp() {
                             <button type="submit" className="ghh">SIGN UP</button>
                         </div>
                     </form>
-                    <p className="para">You have an account khadamny?<Link to="login"><a href="#" className="seeker">Sign IN</a></Link></p>
+                    <p className="para">You have an account khadamny?<Link to="/signine"><a href="#" className="seeker">Sign IN</a></Link></p>
                 </div>
             </div>
         </div>

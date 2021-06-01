@@ -17,12 +17,25 @@ import Profile from './Profile';
 import { Component } from 'react';
 import First from './First';
 import PostJob from './PostJob';
+import Edit from './Edit';
+import Home2 from './Home2';
 
-function App(){
+export class App extends Component{
+  redirect(){
+    if(localStorage.getItem('token')){
+      return './findjobs'
+    }
+    else return './headerlogged'
+  }
+  render(){
     return (
       <Router>
         <div className="app">
           <Switch>
+            <Route path="/edit">
+              <Headerlogged></Headerlogged>
+              <Edit></Edit>
+            </Route>
             <Route path="/postJob">
               <Headerlogged></Headerlogged>
               <PostJob></PostJob>
@@ -48,6 +61,10 @@ function App(){
               <Header></Header>
               <Createsp></Createsp>
             </Route>
+            <Route path="/findjobsprofile">
+              <Headerlogged></Headerlogged>
+              <FindJobs></FindJobs>
+            </Route>
             <Route path="/findjobs">
               <Header></Header>
               <FindJobs></FindJobs>
@@ -67,6 +84,11 @@ function App(){
               <Header></Header>
               <Jobs></Jobs>
             </Route>
+            <Route path="/2">
+              <Headerlogged></Headerlogged>
+              <Home2></Home2>
+              <Footer></Footer>
+            </Route>
             <Route path="/">
               <First></First>
             </Route>
@@ -74,5 +96,6 @@ function App(){
         </div>
       </Router>
     )
+  }
 }
 export default App;

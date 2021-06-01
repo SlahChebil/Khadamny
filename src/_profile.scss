@@ -21,6 +21,11 @@
             .icon{
                 font-size: 100px;
                 color: #37918b;
+                
+            }
+            .add{
+                font-size: 20px;
+                color: red($color: #000000);
             }
         }
         .upload{
@@ -28,7 +33,7 @@
             background: $mainBlue;
             width: 100%;
             margin-bottom: 20px;
-            height: 150px;
+            height: auto;
             .head{
                 display: flex;
                 justify-content: space-between;
@@ -43,29 +48,130 @@
                     color: #fff;
                 }
             }
-            .tail{
+            .post{
                 display: flex;
-                align-items: center;
+                flex-wrap: wrap;
                 justify-content: center;
-                margin-top: 15px;
-                .resume{ 
-                    display: flex;
-                    width: 50%;
-                    align-items: center;
-                    justify-content: center;
-                    width: 50%;
-                    border-radius: 20px;
-                    padding: 5px;
-                    cursor: pointer;
-                    margin-top: 10px;
-                    font-weight: 500;
-                    border: 0.1rem solid #37918b;
-                    color: #ECF3F4;
-                    background-color: #37918b;
-                    height: 45px;
-                }
-                .resume:hover{
+                cursor: pointer;
+                .contenu{
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                    flex: 0 1 320px;
                     background-color: rgb(7, 6, 10);
+                    height: 320px;
+                    margin: 10px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border-radius: 13px;
+
+                    &:hover {
+                        transition: all 0.2s ease-out;
+                        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+                        top: -4px;
+                        border: 2px solid #15dbce;
+                    }
+                    
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        top: -16px;
+                        right: -16px;
+                        background: #00838d;
+                        height: 32px;
+                        width: 32px;
+                        border-radius: 32px;
+                        transform: scale(2);
+                        transform-origin: 50% 50%;
+                        transition: transform 0.15s ease-out;
+                      }
+                    
+                    &:hover:before {
+                        transform: scale(2.15);
+                      }
+                    .head{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .left{
+                            .img{
+                                font-size: 50px;
+                                color: rgb(224, 217, 217);
+                            }
+                        }
+                        .right{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .delete{
+                                color: white;
+                                padding-left: 10px;
+                                font-size: 37px;
+                            }
+                            .delete:hover{
+                                color: #e02214;
+                            }
+                        }
+
+                        
+                    }
+                    
+                    h4{
+                        color: rgb(224, 217, 217);
+                        font-size: 15px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        color: rgb(224, 217, 217);
+                        font-weight: 100;
+                        margin-bottom: 5px;
+                    }
+                    
+                    ul li{
+                        color: rgb(224, 217, 217);
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 100;
+                        font-size: 15px;
+                    }
+                    ul li .icon{
+                        margin-right: 5px;
+                        background: #37918b;
+                        border-radius: 50%;
+                        font-size: 15px;
+                    }
+                    .foter{
+                        position: relative;
+                        .same{
+                            position: absolute;
+                        }
+                        .description{
+                            color: rgb(224, 217, 217);
+                            margin-top: 10px;
+                            height: 67px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            font-size: 17px;
+                            z-index: 999;
+                        }
+                        .apply{
+                            background-color: #37918b;
+                            color: #ECF3F4;
+                            font-weight: 700;
+                            z-index: 1000;
+                            width: 156px;
+                            height: 40px;
+                            margin-left: 25%;
+                            margin-top: 12%;
+                            border: 0.1rem solid #37918b;
+                        }
+                        .apply:hover{
+                            background-color: #40b1a9;
+                        }
+                    }
                 }
             }
         }

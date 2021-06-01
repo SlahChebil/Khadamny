@@ -44,27 +44,20 @@ export class FindJobs extends Component{
             console.log(er);
         })
     }
-    Handler =async (e) => {
-        e.preventDefault()
 
-        const city = this.state.city
-        const categorie = this.state.categorie
-
-        const data = {
-            categorie,
-            city
-        }
-        try {
-            const res = await axios.post('http://localhost:8000/api/accueil', data);
+    componentDidMount() {
+        return axios.get('http://localhost:8000/api/accueil')
+        .then(res => {
             console.log(res);
             const posts = res.data.data;
             this.setState({
                 posts
-            });
-        } catch (er) {
+            })
+        })
+        .catch(er => {
             console.log(er);
-        }
-    }
+        })
+      }
     
     render() {
         const popup = () => {
@@ -77,7 +70,7 @@ export class FindJobs extends Component{
         }
         const {city, categorie} = this.state;
         return(
-        <div className="findjobs" onLoad={this.Handler}>
+        <div className="findjobs" >
             <div className="container">
                 <div className="recherche">
                     <form className="formrech" onSubmit={this.submitHandler}>

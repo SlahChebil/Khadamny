@@ -53,7 +53,7 @@ export class Home extends Component{
                     <form className="form">
                         <input type="text" className="inputs" placeholder="Job title, Keywords" id="job" name="categorie" value={categorie} onChange={this.changeHandler}/>
                         <input type="text" className="inputs" placeholder="City, state, zip code" id="area" name="city" value={city} onChange={this.changeHandler}/>
-                        <Link to='/findjobs'>
+                        <Link to='/findjobsprofile'>
                             <button id="btn" type="submit">Find Job</button>
                         </Link>            
                     </form>

@@ -15,10 +15,6 @@ function Login() {
                     <h6>Welcome to khadamny</h6>
                     <form className="form">
                         <div className="choses">
-                            <ul className="chose">
-                                <li className="choice" onClick={()=>change()} id="employer"><Link to="signine"><a href="#" id="link1">I'm an Employer</a></Link></li>
-                                <li className="choice jobseeker" id="jobseeker"><a href="#" id="link2">I'm a Job Seeker</a></li>
-                            </ul>
                         </div>
                         <input type="email" placeholder="Email Adress" id="email" required/><br/>
                         <input type="password" placeholder="Password" id="password" required/><br/>
@@ -27,7 +23,7 @@ function Login() {
                         </div>
                     </form>
                     <p><a href="#" className="forget">Forget Password?</a></p>
-                    <p className="para">New to khadamny?<Link to="createsp"><a href="#" className="seeker">Create a Job Seeker profile</a></Link></p>
+                    <p className="para">New to khadamny?<Link to="createep"><a href="#" className="seeker">Create a Job Seeker profile</a></Link></p>
                 </div>
             </div>
         </div>

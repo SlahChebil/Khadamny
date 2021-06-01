@@ -37,6 +37,7 @@ export class Signine extends Component {
         .catch(er => {
             this.setState({error:er,succes:false,loading:false})
             console.log(er)
+            window.alert("Failed sign in")
         })
     }
 render() {
@@ -44,19 +45,13 @@ render() {
     
     return (
     <>
-      {this.state.succes ? <Redirect to="/headerlogged" /> : this.state.error ? <p>bad credentials</p>: null}
+      {this.state.succes ? <Redirect to="/2" /> : this.state.error ? <p>bad credentials</p>: null}
       <div className="signine">
             <div className="container">
                 <div className="logins">
                     <h1>SIGN<span>IN</span></h1>
                     <h6>Welcome to khadamny</h6>
                     <form className="form" onSubmit={this.submitHandler}>
-                        <div className="choses">
-                            <ul className="chose">
-                                <li className="choice employer" id="employer"><a href="#" id="link1">I'm an Employer</a></li>
-                                <li className="choice" id="jobseeker"><Link to="login"><a href="#" id="link2">I'm a Job Seeker</a></Link></li>
-                            </ul>
-                        </div>
                         <input type="email" placeholder="Email Adress" id="email" name="email" value={email} onChange={this.changeHandler}required/><br/>
                         <input type="password" placeholder="Password" id="password" name="password" value={password} onChange={this.changeHandler}required/><br/>
                         <div className="submit">

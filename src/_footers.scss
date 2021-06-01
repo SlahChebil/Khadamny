@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.mogh .contents .sdddq{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  li{
+    text-decoration: none;
+    padding-bottom: 15px;
+    margin-left: -360px;
+    list-style: none;
+    font-size: 18px;
+  }
+}
+.louta{
+  text-align: center;
+  h2{
+    font-size: 15px;
+    color: #777373;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
 .contents{
   position: relative;
   margin: 130px auto;
@@ -23,10 +44,11 @@ padding-top: 50px;
   position: relative;
   bottom: 0px;
   width: 100%;
-  background: $lightBlue;
+  background: #000000;
 }
 .main-content{
   display: flex;
+  background: #000000;
 }
 .main-content .box{
   flex-basis: 50%;
@@ -36,7 +58,7 @@ padding-top: 50px;
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: $intoBlue;
+  color: $lightBlue;
 }
 .box .contents{
   margin: 20px 0 0 0;
@@ -88,6 +110,9 @@ padding-top: 50px;
 }
 .left .contents p{
   text-align: justify;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
 }
 .left .contents .social{
   margin: 20px 0 0 0;
@@ -107,11 +132,9 @@ padding-top: 50px;
 }
 .center .contents .fas{
   background: #1a1a1a;
-  height: 48px;
-  width: 48px;
-  font-size: 15px;
-  color:white;
-  border-radius: 10%;
+  font-size: 30px;
+  color:rgb(255, 255, 255);
+  border-radius: 50%;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -122,17 +145,20 @@ padding-top: 50px;
     align-items: center;
 }
 .center .contents .fas:hover{
-  background: #254442;
+  background: $lightBlue;
 }
 .center .contents .text{
   font-size: 1.0625rem;
   font-weight: 500;
   padding-left: 10px;
+  color: #fff;
 }
 
 .center .contents .phone{
   margin: 20px 0;
 }
+
+
 .right form .text{
   font-size: 1.0625rem;
   margin-bottom: 2px;

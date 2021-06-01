@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 function Header() {
     return (
@@ -10,19 +10,14 @@ function Header() {
                     <Link to="/" style={{textDecoration: 'none'}}>
                         <span className="logo">Khadamany</span>
                     </Link>
+
+
+                </div>
+                <div className="right">
                     <Link to="./findjobs" style={{textDecoration: 'none' ,color: 'white'}}>
                         <span className="logos">Find Jobs</span>
                     </Link>
-                    <Link to="./headerlogged" style={{textDecoration: 'none' ,color: 'white'}}>
-                        <span className="logos">Company reviews</span>
-                    </Link>
-                </div>
-                <div className="right">
-                    <Link to="./wave" style={{textDecoration: 'none', color: 'white'}}>
-                        <span className="logos">Upload your Resume</span>
-                    </Link>
-                    <button><span className="logos">Post my Job</span></button>
-                    <Link to="./login" style={{textDecoration: 'none', color: 'white'}}>
+                    <Link to="./signine" style={{textDecoration: 'none', color: 'white'}}>
                         <span className="logos" style={{color: '#fff'}}>Sign In</span>
                     </Link>
                 </div>

@@ -19,14 +19,6 @@ function Footers() {
                         <h2>About us</h2>
                         <div className="contents">
                             <p>Khadamni.tn its a web application that offers job opportunities for many people with different skills and provide an equal chances for everyone. The main purpose is to offer a good and easy experience while searching a job</p>
-                            <div className="social">
-                                <ul className="social">
-                                    <li><a href="#"><FacebookIcon className="fab fa-facebook-f"></FacebookIcon></a></li>
-                                    <li><a href="#"><TwitterIcon className="fab fa-twitter"></TwitterIcon></a></li>
-                                    <li><a href="#"><InstagramIcon className="fab fa-instagram"></InstagramIcon></a></li>
-                                    <li><a href="#"><YouTubeIcon className="fab fa-youtube"></YouTubeIcon></a></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                     <div className="center box">
@@ -37,34 +29,28 @@ function Footers() {
                                     <span className="text">Monastir, Tunisia</span>
                                 </div>
                                 <div className="phone">
-                                    <span><CallIcon className="fas"></CallIcon></span>
+                                    <span className="hello"><CallIcon className="fas"></CallIcon></span>
                                     <span className="text">+216-54369281</span>
                                 </div>
                                 <div className="email">
-                                    <span><EmailIcon className="fas"></EmailIcon></span>
+                                    <span className="hello"><EmailIcon className="fas"></EmailIcon></span>
                                     <span className="text">khadamny@gmail.com</span>
                                 </div>
                             </div>
                     </div>
 
-                    <div className="right box">
-                        <h2>Contact us</h2>
+                    <div className="mogh box">
+                        <h2>Services</h2>
                         <div className="contents">
-                            <form action="#">
-                                <div className="email">
-                                    <div className="text">Email *</div>
-                                    <input type="email" required></input>
-                                </div>
-                                <div className="msg">
-                                    <div className="text">Message *</div>
-                                    <textarea rows="2" cols="25" required></textarea>
-                                </div>
-                                <div className="btn">
-                                    <button type="submit">Send</button>
-                                </div>
-                            </form>
+                            <ul className="sdddq">
+                                <li>Job Seeker</li>
+                                <li>Job Recruter</li>
+                            </ul>
                         </div>
                     </div>
+                </div>
+                <div className="louta">
+                    <h2>Khadamni © 2021</h2>
                 </div>
             </footer>
         </div>
