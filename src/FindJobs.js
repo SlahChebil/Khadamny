@@ -97,6 +97,9 @@ export class FindJobs extends Component{
                             </div>
                         ))}       
                 </div>
+                <div className="louta">
+                    <h2>Khadamni © 2021</h2>
+                </div>
                 <div className="popup" id="popup">
                         <div className="popup_content">
                             <div className="head">
@@ -104,8 +107,8 @@ export class FindJobs extends Component{
                                 <CloseRoundedIcon className="close" onClick={()=>close()}></CloseRoundedIcon>
                             </div>
                             <div className="inputs">
-                                <input type="text" placeholder="sleh.chebil.sc@gmail.com"/>
-                                <input type="text" placeholder="Please add a Phone Number" />
+                                <input type="text" placeholder="supra@gmail.com"/>
+                                <input type="text" placeholder="52698321" />
                             </div>
                             <button className="Save">Save</button>
                         </div>

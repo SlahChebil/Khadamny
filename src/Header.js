@@ -8,7 +8,7 @@ function Header() {
             <header>
                 <div className="left">
                     <Link to="/" style={{textDecoration: 'none'}}>
-                        <span className="logo">Khadamany</span>
+                        <span className="logo">Khadamny</span>
                     </Link>
 
 
